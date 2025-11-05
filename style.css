@@ -1,1 +1,30 @@
-
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+body{display: flex;
+     flex-direction: collumn;
+     min-height: 100vh;
+     font-family:arial,sans-serif;}
+/*navbar fixed */
+header {position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;}
+.navbar {display: flex;
+         justify-content: center; /* menu di tengah */
+         align-items: center;
+         background-color: #333;
+         padding: 10px 20px;}
+.navbar ul {list-style: none;
+            display: flex;}
+.navbar ul {list-style: none;
+            display: flex;}
+.navbar ul li {margin-left: 20px;}
+.navbar ul li a {color: #fff;
+                 text-decoration: none;
+                 font-weight: bold;}
+/*kasih jarak biar konten tidak ketimpa navabr */
+main {
+  flex: 1;
+  padding: 100px 20px 20px; /* padding-top sesuai tinggi navbar */}
